@@ -40,8 +40,8 @@ lydia = LydiaAI("<YOUR API KEY>", loop=loop)
 async def main():
     session = await lydia.create_session()
     while True:
-    output = await session.think_thought(input("Input: "))
-    print(f"Output: {output}")
+        output = await session.think_thought(input("Input: "))
+        print(f"Output: {output}")
     
 
 if __name__ == "__main__":
